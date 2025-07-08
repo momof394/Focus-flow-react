@@ -1,4 +1,85 @@
-{
+{<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Focus Flow – ADHD-Friendly Productivity</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #f3f4f6;
+      color: #1f2937;
+    }
+    .container {
+      max-width: 600px;
+      margin: 80px auto;
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+    h1 {
+      color: #4f46e5;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+    ul {
+      text-align: left;
+      margin: 20px 0;
+      padding-left: 0;
+      list-style: none;
+    }
+    ul li::before {
+      content: '✔️ ';
+    }
+    button {
+      background-color: #4f46e5;
+      color: white;
+      border: none;
+      padding: 14px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #3730a3;
+    }
+    #demo-message {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #10b981;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Focus Flow</h1>
+    <p>Your ADHD-friendly productivity tool, built to help you stay focused, organized, and motivated.</p>
+    <ul>
+      <li>Brain Dump Pad</li>
+      <li>Smart Time Blocks</li>
+      <li>Impulse Interruptor</li>
+      <li>Planner Pages</li>
+      <li>Ambient Focus Sounds</li>
+    </ul>
+    <button onclick="showMessage()">Try a Demo</button>
+    <p id="demo-message"></p>
+  </div>
+  <script>
+    function showMessage() {
+      document.getElementById('demo-message').innerText = 
+        "🎉 Demo activated! Imagine this helping you stay on track every day.";
+    }
+  </script>
+</body>
+</html>
   "name": "flownevo",
   "version": "1.0.0",
   "scripts": {
