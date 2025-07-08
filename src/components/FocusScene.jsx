@@ -52,14 +52,3 @@ const FocusScene = () => {
 };
 
 export default FocusScene;
-{
-  "configurations": [
-    {
-      "type": "chrome",
-      "request": "launch",
-      "name": "Launch React App",
-      "url": "http://localhost:3000",
-      "webRoot": "${workspaceFolder}"
-    }
-  ]
-}
