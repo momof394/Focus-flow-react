@@ -3,5 +3,8 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  root: 'public/index.html'
+  root: '.', // This tells Vite to use the root of the project
+  build: {
+    outDir: 'dist',
+  },
 })
